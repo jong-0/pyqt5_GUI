@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle">
+   <string>Disc Cutter Monitoring System</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>web.png</normaloff>web.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	border:none;
+	background-color:transparent;
+	background:none;
+	padding:0;
+	margin:0;
+	color:#fff;
+}
+#centralwidget{
+	background-color:#1f232a;
+}
+QPushButton{
+	text-align:left;
+	padding: 2px 5px;
+}
+QTableWidget{
+	color:#000
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1672</width>
+     <height>981</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item alignment="Qt::AlignLeft|Qt::AlignTop">
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item alignment="Qt::AlignLeft">
+           <widget class="QFrame" name="frame_5">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QPushButton" name="open_btn">
+               <property name="text">
+                <string>Import data</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../QT-PyQt-PySide-Custom-Widgets-main/QT-PyQt-PySide-Custom-Widgets-main/Custom_Widgets/Qss/icons/original_svg/folder-plus.svg</normaloff>../QT-PyQt-PySide-Custom-Widgets-main/QT-PyQt-PySide-Custom-Widgets-main/Custom_Widgets/Qss/icons/original_svg/folder-plus.svg</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>     </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="img_btn">
+               <property name="text">
+                <string>Import Image</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>QT-PyQt-PySide-Custom-Widgets-main/QT-PyQt-PySide-Custom-Widgets-main/Custom_Widgets/Qss/icons/original_svg/image.svg</normaloff>QT-PyQt-PySide-Custom-Widgets-main/QT-PyQt-PySide-Custom-Widgets-main/Custom_Widgets/Qss/icons/original_svg/image.svg</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>780</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QTableWidget" name="tbl">
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTableWidget
+{
+    background: #1f232a;
+}
+
+QTableWidget::item
+{
+    color:rgba(255,255,255,150);
+    background: #444850;
+    text-align:center;
+}
+
+QTableWidget::item:hover
+{
+    color:#FFFFFF;
+    background: #4B4B4D;
+}
+
+QTableWidget::item:selected
+{
+    color:#FFFFFF;
+    background: #484c53;
+}
+
+QHeaderView::section
+{
+	background-color: #373a40;
+}
+
+QTableWidgetQTableCornerButton::section
+{
+	background-color: red;
+}</string>
+            </property>
+            <property name="cornerButtonEnabled">
+             <bool>true</bool>
+            </property>
+            <attribute name="horizontalHeaderCascadingSectionResizes">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>175</number>
+            </attribute>
+            <attribute name="verticalHeaderCascadingSectionResizes">
+             <bool>false</bool>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item alignment="Qt::AlignTop">
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item alignment="Qt::AlignRight">
+           <widget class="QFrame" name="frame_7">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="cal_btn">
+               <property name="text">
+                <string>Refresh</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../QT-PyQt-PySide-Custom-Widgets-main/QT-PyQt-PySide-Custom-Widgets-main/Custom_Widgets/Qss/icons/original_svg/refresh-cw.svg</normaloff>../QT-PyQt-PySide-Custom-Widgets-main/QT-PyQt-PySide-Custom-Widgets-main/Custom_Widgets/Qss/icons/original_svg/refresh-cw.svg</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+        <widget class="QFrame" name="frame_4">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>15</number>
+          </property>
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <property name="bottomMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="lbl_img">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1672</width>
+     <height>36</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
